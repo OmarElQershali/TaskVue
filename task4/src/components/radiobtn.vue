@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="(redio , index) in redios" :key="index">
-        <input type="radio" name="gender" id="male" value="male" />
+        <input :type="type" name="gender" id="male" value="male" />
         <label for="male">{{ redio }}</label>
       </li>
     </ul>
@@ -12,7 +12,8 @@
 <script>
 export default {
   props: {
-    redios: Array
+    redios: Array,
+    type: Array
   }
 };
 </script>

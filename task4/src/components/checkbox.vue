@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li v-for="(check, index) in checks " :key="index">
-        <input type="checkbox" name="vehicle1" value="Bike" />
+        <input :type="type" name="vehicle1" value="Bike" />
         <label>{{check}}</label>
       </li>
     </ul>
@@ -12,7 +12,8 @@
 <script>
 export default {
   props: {
-    checks: Array
+    checks: Array,
+    type: Array
   }
 };
 </script>

@@ -1,11 +1,12 @@
 <template>
-  <button>{{ name }}</button>
+  <button @click="increment">{{ name }}</button>
 </template>
 
 <script>
 export default {
   props: {
-    name: String
+    name: String,
+    increment: Function
   }
 };
 </script>
