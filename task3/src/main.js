@@ -4,6 +4,7 @@ import "./component";
 Vue.config.productionTip = false;
 
 new Vue({
+  data: {},
   render: h => h(App)
   // beforeCreate() {
   //   alert("beforecreate");
