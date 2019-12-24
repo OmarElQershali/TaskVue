@@ -15,6 +15,11 @@ export default {
     redios: Array,
     type: Array
   }
+  // data() {
+  //   return {
+  //     title: "male"
+  //   };
+  // }
 };
 </script>
 <style scoped>
