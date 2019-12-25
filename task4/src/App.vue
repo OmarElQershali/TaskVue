@@ -18,17 +18,35 @@ export default {
   data() {
     return {
       count: 52,
-      title: "this is Text Area",
-      checks: ["I have a bike", "I have a car", "I have a boat"],
-      redios: ["Male", "Female"],
-      options: ["Volvo", "Saab", "Mercedes", "Audi"],
+      title: "",
+      checks: [],
+      redios: [],
+      options: [],
       type: ["text", "radio", "checkbox"]
     };
   },
   methods: {
     increment() {
       this.count++;
+    },
+    getTitle() {
+      this.title = "this is Text Area";
+    },
+    getRedios() {
+      this.redios = ["Male", "Female"];
+    },
+    getChecks() {
+      this.checks = ["I have a bike", "I have a car", "I have a boat"];
+    },
+    getOptions() {
+      this.options = ["Volvo", "Saab", "Mercedes", "Audi"];
     }
+  },
+  created() {
+    this.getTitle();
+    this.getRedios();
+    this.getChecks();
+    this.getOptions();
   }
 };
 </script>
