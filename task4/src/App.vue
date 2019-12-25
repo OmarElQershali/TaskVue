@@ -22,7 +22,7 @@ export default {
       checks: [],
       redios: [],
       options: [],
-      type: ["text", "radio", "checkbox"]
+      type: []
     };
   },
   methods: {
@@ -40,6 +40,9 @@ export default {
     },
     getOptions() {
       this.options = ["Volvo", "Saab", "Mercedes", "Audi"];
+    },
+    getText() {
+      this.type = ["text", "radio", "checkbox"];
     }
   },
   created() {
@@ -47,6 +50,7 @@ export default {
     this.getRedios();
     this.getChecks();
     this.getOptions();
+    this.getText();
   }
 };
 </script>
