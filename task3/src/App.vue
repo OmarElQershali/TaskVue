@@ -27,7 +27,7 @@ export default {
     //   get: () => this.Age
     // });
     return {
-      test: "Age"
+      test: this.Age
     };
   },
   /**
